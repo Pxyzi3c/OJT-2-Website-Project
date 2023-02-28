@@ -1,0 +1,80 @@
+.courses__webpage {
+    margin-top: 5rem;
+}
+
+.course {
+    cursor: pointer;
+}
+
+/* ========================= POP MESSAGE ========================= */
+.popUp__message__container {
+    background: rgba(0, 0, 0, 0.466);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    display: none;
+    justify-content: center;
+}
+
+.popUp__message {
+    background: var(--color-white);
+    padding: 1rem 1rem 5rem;
+    width: fit-content;
+    border-radius: 1.2rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-dark);
+}
+
+.popUp__message-img {
+    align-self: center;
+}
+
+.popUp__message-img img {
+    height: 20rem;
+    width: auto;
+}
+
+.popUp__message h3 {
+    padding: 0;
+    text-align: center;
+    border-radius: 1.2rem;
+}
+
+.popUp__message p {
+    padding: 0 10rem;
+    border-radius: 0 0 1.3rem 1.3rem;
+}
+
+/* ======================================= MEDIA QUERIES ======================================= */
+@media screen and (min-width: 1025px) {
+    .nav__container #coursesPageNav {
+        color: var(--color-main2);
+        border-bottom: 4px solid var(--color-main2);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* ========================= POP MESSAGE ========================= */
+    .popUp__message {
+        padding: 0.5rem 2rem 1.5rem;
+    }
+
+    .popUp__message-img img {
+        height: 10rem;
+        width: auto;
+    }
+
+    .popUp__message h3 {
+        padding: 0;
+        text-align: center;
+        border-radius: 1.2rem;
+    }
+
+    .popUp__message p {
+        padding: 0;
+    }
+}
